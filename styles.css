@@ -57,13 +57,13 @@ main {
     flex-direction: column;
 }
 
-#header {
+#navbar {
     background-color: var(--background3);
     margin: 0;
     padding: 0;
     height: 80px;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -71,14 +71,14 @@ main {
     box-shadow: var(--background3) 0 0 5px;
 }
 
-#header-logo {
+#navbar-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
 
-#header-logo img {
+#navbar-logo img {
     height: 60px;
 }
 
