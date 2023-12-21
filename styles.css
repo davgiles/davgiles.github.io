@@ -82,24 +82,24 @@ main {
     height: 60px;
 }
 
-#header-nav ul {
+#navbar ul {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
     margin-right: 3rem;
 }
 
-#header-nav a {
+#navbar a {
     color: var(--accent1);
     font-size: 2.2rem;
 }
 
-#header-nav a:hover {
+#navbar a:hover {
     text-decoration: underline;
 }
 
 #welcome-section,
-#project-section,
+#projects,
 #contact-section,
 #footer {
     display: flex;
@@ -126,7 +126,7 @@ main {
     font-weight: 100;
 }
 
-#project-section {
+#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -135,12 +135,12 @@ main {
     padding: 100px 20%;
 }
 
-#project-section h2 {
+#projects h2 {
     text-align: center;
     flex-basis: 100%;
 }
 
-.project {
+.project-tile {
     width: 400px;
     max-width: 400px;
     min-width: 400px;
@@ -154,7 +154,7 @@ main {
         box-shadow 0.2s ease-in-out;
 }
 
-.project-title {
+.project-name {
     text-align: center;
     color: #000000;
     letter-spacing: 1.5px;
@@ -167,12 +167,12 @@ main {
     transition: opacity 0.2s ease-in-out;
 }
 
-.project:hover {
+.project-tile:hover {
     .bracket {
         opacity: 1;
     }
 
-    .project-title {
+    .project-name {
         letter-spacing: 2px;
     }
 
@@ -180,7 +180,7 @@ main {
     box-shadow: #999999 0 0 12px;
 }
 
-.project .project-img {
+.project-tile .project-img {
     object-fit: cover;
     width: 100%;
     height: auto;
@@ -245,7 +245,7 @@ main {
 }
 
 @media only screen and (max-width: 1400px) {
-    #project-section {
+    #projects {
         padding: 100px 10%;
     }
 }
