@@ -1,0 +1,266 @@
+:root {
+    --background1: #3D405B;
+    --background2: #EEEEEE;
+    --background3: #292B3D;
+    --accent1: #F2CC8F;
+    --accent2: #E07A5F;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', 'Helvetica', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+    padding: 2rem 4rem;
+    color: var(--accent1);
+    text-shadow: var(--background3) 0 0 6px;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-color: var(--background3);
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--background3) 0 0 5px;
+}
+
+#header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#header-logo img {
+    height: 60px;
+}
+
+#header-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-right: 3rem;
+}
+
+#header-nav a {
+    color: var(--accent1);
+    font-size: 2.2rem;
+}
+
+#header-nav a:hover {
+    text-decoration: underline;
+}
+
+#welcome-section,
+#project-section,
+#contact-section,
+#footer {
+    display: flex;
+    width: 100%;
+}
+
+#welcome-section,
+#contact-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background1);
+    color: #FFFFFF;
+    height: 100vh;
+    text-align: center;
+}
+
+#welcome-section h1 {
+    margin: 0;
+}
+
+#welcome-section p {
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+#project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--background2);
+    padding: 100px 20%;
+}
+
+#project-section h2 {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.project {
+    width: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: #999999 0 0 8px;
+    transition: transform 0.3s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+}
+
+.project-title {
+    text-align: center;
+    color: #000000;
+    letter-spacing: 1.5px;
+    transition: letter-spacing 0.3s ease-in-out;
+}
+
+.bracket {
+    color: var(--accent2);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.project:hover {
+    .bracket {
+        opacity: 1;
+    }
+
+    .project-title {
+        letter-spacing: 2px;
+    }
+
+    transform: scale(1.01);
+    box-shadow: #999999 0 0 12px;
+}
+
+.project .project-img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+#contact-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#social-links ul {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+#social-links a {
+    color: #FFFFFF;
+    font-size: 3rem;
+    transition: letter-spacing 0.3s ease-in-out,
+        text-shadow 0.3s ease-in-out;
+}
+
+#social-links a:hover {
+    text-shadow: #14151f 0 0 5px;
+    letter-spacing: 2px;
+
+    .bracket {
+        opacity: 1;
+    }
+}
+
+#footer {
+    background-color: var(--background3);
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    align-items: center;
+    border-top: 2px solid var(--accent1);
+}
+
+#footer p {
+    margin-left: 10px;
+    font-size: 1.4rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in;
+}
+
+@media only screen and (max-width: 1400px) {
+    #project-section {
+        padding: 100px 10%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 4.8rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 1.92rem;
+    }
+}
