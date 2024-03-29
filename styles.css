@@ -1,9 +1,9 @@
 :root {
-    --background1: #3D405B;
+    --background1: #eeeeee;
     --background2: #EEEEEE;
-    --background3: #292B3D;
-    --accent1: #F2CC8F;
-    --accent2: #E07A5F;
+    --background3: #ffffff;
+    --accent1: #1751cf;
+    --accent2: #8645ff;
 }
 
 * {
@@ -36,7 +36,7 @@ h1 {
     font-weight: 900;
     margin: 0;
     padding: 2rem 4rem;
-    color: var(--accent1);
+    color: #000;
     text-shadow: var(--background3) 0 0 6px;
 }
 
@@ -90,7 +90,7 @@ main {
 }
 
 #navbar a {
-    color: var(--accent1);
+    color: #000;
     font-size: 2.2rem;
 }
 
@@ -112,7 +112,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--background1);
-    color: #FFFFFF;
+    color: #000;
     height: 100vh;
     text-align: center;
 }
@@ -200,7 +200,7 @@ main {
 }
 
 #social-links a {
-    color: #FFFFFF;
+    color: #000;
     font-size: 3rem;
     transition: letter-spacing 0.3s ease-in-out,
         text-shadow 0.3s ease-in-out;
@@ -217,12 +217,11 @@ main {
 
 #footer {
     background-color: var(--background3);
-    color: #FFFFFF;
+    color: #000;
     margin: 0;
     padding: 0;
     height: 60px;
     align-items: center;
-    border-top: 2px solid var(--accent1);
 }
 
 #footer p {
