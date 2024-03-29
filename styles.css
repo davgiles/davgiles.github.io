@@ -2,7 +2,7 @@
     --background1: #eeeeee;
     --background2: #EEEEEE;
     --background3: #ffffff;
-    --accent1: #1751cf;
+    --accent1: #103482;
     --accent2: #8645ff;
 }
 
@@ -106,7 +106,30 @@ main {
     width: 100%;
 }
 
-#welcome-section,
+#welcome-section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background1);
+    padding: 0 25%;
+}
+
+#welcome-section .container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
 #contact-section {
     flex-direction: column;
     justify-content: center;
@@ -119,11 +142,13 @@ main {
 
 #welcome-section h1 {
     margin: 0;
+    text-align: center;
 }
 
 #welcome-section p {
     font-size: 2.4rem;
     font-weight: 100;
+    text-align: center;
 }
 
 #projects {
@@ -131,7 +156,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    background-color: var(--background2);
+    background-color: #fff;
     padding: 100px 20%;
 }
 
@@ -200,7 +225,7 @@ main {
 }
 
 #social-links a {
-    color: #000;
+    color: #000000;
     font-size: 3rem;
     transition: letter-spacing 0.3s ease-in-out,
         text-shadow 0.3s ease-in-out;
@@ -261,5 +286,10 @@ main {
 
     h3 {
         font-size: 1.92rem;
+    }
+
+    #welcome-section {
+        padding: 25% 25%;
+        gap: 50px;
     }
 }
