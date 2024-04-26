@@ -99,7 +99,7 @@ main {
 }
 
 #welcome-section,
-#projects,
+#project-section,
 #contact-section,
 #footer {
     display: flex;
@@ -151,7 +151,7 @@ main {
     text-align: center;
 }
 
-#projects {
+#project-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -160,7 +160,7 @@ main {
     padding: 100px 20%;
 }
 
-#projects h2 {
+#project-section h2 {
     text-align: center;
     flex-basis: 100%;
 }
@@ -269,7 +269,7 @@ main {
 }
 
 @media only screen and (max-width: 1400px) {
-    #projects {
+    #project-section {
         padding: 100px 10%;
     }
 }
