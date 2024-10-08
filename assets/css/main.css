@@ -2246,18 +2246,9 @@ input, select, textarea {
 				background-position: center center;
 			}
 
-			#main > section.one::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-image: url("../../images/banner1.jpg");
-				filter: blur(4px);
-
 			#main > section.one {
-				position: relative;
+				background-color: #81918E;
+				background-image: url("../../images/banner1.jpg");
 			}
 
 			#main > section.two {
