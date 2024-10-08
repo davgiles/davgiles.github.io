@@ -2246,11 +2246,18 @@ input, select, textarea {
 				background-position: center center;
 			}
 
-			#main > section.one {
-				background-color: #81918E;
+			#main > section.one::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
 				background-image: url("../../images/banner1.jpg");
-				filter: blur(8px);
-  				-webkit-filter: blur(8px);
+				filter: blur(4px);
+
+			#main > section.one {
+				position: relative;
 			}
 
 			#main > section.two {
